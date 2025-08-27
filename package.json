@@ -11,6 +11,11 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.876.0",
+    "@aws-sdk/lib-dynamodb": "^3.876.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -26,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "jsdom": "^26.1.0",
+    "sass-embedded": "^1.91.0",
     "vite": "^7.1.2",
     "vitest": "^3.2.4"
   }
