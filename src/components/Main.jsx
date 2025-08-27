@@ -17,6 +17,7 @@ export default function Main() {
   const handleCreateRecord = async (event) => {
     event.preventDefault();
 
+    
     const newTrainingRecord = {
       id: Date.now().toString(),
       sets: event.target.sets.value,
