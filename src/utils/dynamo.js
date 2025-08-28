@@ -34,6 +34,7 @@ export const createItem = async (tableName, item) => {
   const response = await docClient.send(command);
 
   console.log(response);
+  return item;
 };
 
 // export const deleteTodoById = async (id) => {

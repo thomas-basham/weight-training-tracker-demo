@@ -2,10 +2,8 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import App from "./App";
 
-test("loads andd displays vite + react", () => {
+test("loads andd displays the title Weight Training Tracker", () => {
   render(<App />);
 
-  expect(
-    screen.getByText("Vite + React", { exact: false })
-  );
+  expect(screen.getByText("Weight Training Tracker", { exact: false }));
 });

@@ -19,7 +19,7 @@ export default function Main() {
 
     
     const newTrainingRecord = {
-      id: Date.now().toString(),
+      id: Date.now().toString(), 
       sets: event.target.sets.value,
       reps: event.target.reps.value,
       weight: event.target.weight.value,
