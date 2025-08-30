@@ -23,9 +23,10 @@ export const listAllItems = async (tableName) => {
     const response = await docClient.send(command);
     console.log(response);
 
-    return response.Items;
+    return response.Items || [];
   } catch (err) {
     console.log(err.message);
+    return []
   }
 };
 
