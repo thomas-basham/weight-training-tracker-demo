@@ -8,9 +8,15 @@ import {
   DeleteCommand,
 } from "@aws-sdk/lib-dynamodb";
 
-export const docClient = DynamoDBDocumentClient.from(new DynamoDBClient({}), {
-  marshallOptions: { removeUndefinedValues: true },
+const client = new DynamoDBClient({
+  region: import.meta.env.VITE_AWS_REGION,
+  credentials: {
+    accessKeyId: import.meta.env.VITE_AWS_ACCESS_KEY_ID,
+    secretAccessKey: import.meta.env.VITE_AWS_SECRET_ACCESS_KEY,
+  },
 });
+
+const docClient = DynamoDBDocumentClient.from(client);
 
 export const listAllItems = async (tableName) => {
   try {
