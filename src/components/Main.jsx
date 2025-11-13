@@ -50,7 +50,7 @@ export default function Main() {
         </form>
       </section>
 
-      <section>
+      <section id="results">
         <h2>Recorded Results</h2>
 
         {trainingRecords.map((record, index) => {
